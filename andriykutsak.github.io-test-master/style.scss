@@ -1,0 +1,658 @@
+                                       * {
+                                   box-sizing: border-box;
+                               }
+
+                               body {
+                                   font-family: arial tahoma;
+                               }
+
+                               .main-bg {
+                                   background-image: url("img/main-bg.jpg");
+                                   background-size: cover;
+                               }
+
+                               .content {
+                                   display: flex;
+                                   flex-wrap: wrap;
+                               }
+
+                               * {
+                                   box-sizing: border-box;
+                               }
+
+                               a {
+                                   text-decoration: none;
+                               } //header
+                               .logo-wrap {
+                                   max-width: 975px;
+                                   margin: 0 auto;
+                                   padding-top: 10px;
+                                   display: flex;
+                               }
+
+                               .logo {
+                                   max-width: 200px;
+                               }
+
+                               .links-wrap {
+                                   margin-left: 389px;
+                                   a {
+                                       font-family: arial;
+                                       font-size: 12px;
+                                       line-height: 26px;
+                                       color: #ffffff;
+                                       margin-right: 12px;
+                                   }
+                               }
+
+                               .head-menu {
+
+                                   max-width: 1000px;
+                                   margin: 0 auto;
+                                   .menu {
+                                       margin-top: 28px;
+                                       margin-bottom: 10px;
+                                       border: 1px solid #fff;
+                                       background-color: #609cff;
+                                       border-radius: 5px;
+                                       li {
+                                           display: inline-block;
+                                           padding: 10px 10px;
+                                           transition: background-color 0.3s;
+                                           a {
+                                               font-family: arial;
+                                               font-size: 13px;
+                                               color: #fff;
+                                           }
+                                           &:hover {
+                                               background-color: #676370;
+
+                                               transform: scale(1.1);
+                                           }
+                                       }
+                                   } //end header
+                                   .category-list {
+                                       li,
+                                       a {
+                                           font-family: arial;
+                                           font-size: 12px;
+                                           display: inline-block;
+                                           color: #686869;
+                                           line-height: 26px;
+                                       }
+
+                                       a {
+                                           padding: 0 8px;
+                                           text-decoration: underline;
+                                       } //content
+                                       .content {
+                                           max-width: 1000px;
+                                           margin: 0 auto;
+                                       }
+
+                                       .head-news {
+                                           max-width: 508px;
+                                           border-radius: 5px;
+                                           padding: 8px 7px;
+                                           background-color: #fff;
+                                           .news-head {
+                                               font-family: arial;
+                                               font-size: 13px;
+                                               color: #fff;
+                                               padding: 7px 12px;
+                                               background-color: #676370;
+                                               margin-bottom: 7px;
+                                           }
+                                           .desc-wrap {
+                                               display: flex;
+                                               flex-wrap: wrap;
+                                           }
+                                           .news-desc {
+                                               font-family: arial;
+                                               font-size: 11.96px;
+                                               max-width: 275px;
+                                               line-height: 16.9px;
+                                               padding-left: 7px;
+                                           }
+                                           .news-link {
+                                               font-family: arial;
+                                               font-size: 11.96px;
+                                               line-height: 16.9px;
+                                               text-decoration: underline;
+                                               margin-top: 8px;
+                                               color: #676370;
+                                               margin-bottom: 6px;
+                                           }
+                                           .btn-wrap li {
+                                               display: inline-block;
+                                               text-align: center;
+                                               background-color: #609cff;
+                                               padding-top: 5px;
+                                               width: 28px;
+                                               height: 27px;
+                                               a {
+                                                   font-family: arial;
+                                                   font-size: 14px;
+                                                   color: #ffff;
+                                                   text-decoration: none;
+                                               }
+                                           }
+                                           .btn-wrap li:last-child {
+                                               color: #fff;
+                                               font-size: 13.11px;
+                                               width: 124px;
+                                               background-color: #676370;
+                                               padding: 8px 0;
+                                               margin-left: 49px;
+                                               a {
+                                                   text-decoration: underline;
+                                               }
+                                           }
+                                       } //search block
+                                       .search-wrap {
+                                           padding: 8px 0px;
+                                           .search-list {
+                                               li {
+                                                   display: inline-block;
+                                                   padding: 0 7px;
+                                                   margin-bottom: 5px;
+                                                   a {
+                                                       font-family: arial;
+                                                       font-size: 12px;
+                                                       color: #676370;
+                                                       text-decoration: underline;
+                                                   }
+                                               }
+                                           }
+                                           .search-field {
+                                               height: 31px;
+                                               padding: 7px 0 7px 10px;
+                                               background-color: #FFF;
+                                               font-family: arial;
+                                               font-size: 13px;
+                                               width: 415px;
+                                               color: #b7b7b7;
+                                               border-style: none;
+                                               border-top-left-radius: 5px;
+                                               border-bottom-left-radius: 5px;
+                                           }
+                                           .search-btn-wrap {
+                                               display: inline-block;
+                                               position: relative;
+                                           }
+                                           .search-ico {
+                                               position: absolute;
+                                               top: 7px;
+                                               left: 11px;
+                                           }
+                                           .search-btn {
+                                               height: 31px;
+                                               width: 93px;
+                                               margin-left: -5px;
+                                               padding: 6px 14px 7px 39px;
+                                               border: 1px solid #1a99d9;
+                                               background-color: #609cff;
+                                               color: #fafcff;
+                                               font-family: arial;
+                                               font-size: 12px;
+                                               border-top-right-radius: 5px;
+                                               border-bottom-right-radius: 5px;
+                                           }
+                                       } //end search block
+                                       //politics news block
+                                       .pol {
+                                           h2 {
+                                               width: 100%;
+                                           }
+                                       }
+
+                                       .head-news {
+                                           display: flex;
+                                           flex-wrap: wrap;
+                                           .pol-block {
+                                               max-width: 246px;
+                                               padding: 3px 3px;
+                                               ;
+                                           }
+                                           .pol-link {
+                                               font-family: arial;
+                                               font-size: 13px;
+                                               color: #609cff;
+                                               text-decoration: underline;
+                                           }
+                                           .pol-wrap {
+                                               .pol-img {
+                                                   margin-right: 5px;
+                                                   float: left;
+                                               }
+                                               .pol-desc {
+                                                   font-size: 12px;
+                                                   color: #676370;
+                                               }
+                                           }
+                                       }
+
+                                       .news-footer {
+                                           li {
+                                               display: inline-block;
+                                               padding: 17px 2px 8px 2px;
+                                               ;
+                                               a {
+                                                   font-size: 13px;
+                                                   color: #609cff;
+                                                   text-decoration: underline;
+                                               }
+                                           }
+                                       } //end politics news block
+                                       //daily news
+                                       .daily-news {
+                                           max-width: 494px;
+                                           .news-head {
+                                               padding: 9px 10px;
+                                               background-color: #676370;
+                                               color: #fff;
+                                           }
+                                           .day-head {
+                                               font-size: 13.52px;
+                                               font-weight: bold;
+
+                                               margin: 12px 10px;
+                                               color: #609cff;
+                                               text-decoration: underline;
+                                           }
+                                           .day-img {
+                                               display: block;
+                                               margin: 0 auto;
+                                               max-width: 359px;
+                                               margin-bottom: 8px;
+                                           }
+                                           .day-desc {
+                                               max-width: 489px;
+                                               font-size: 12px;
+                                               color: #676370;
+                                               margin-bottom: 8px;
+                                           }
+                                           .info-desc {
+
+                                               border: 1px solid #d5d5d5;
+                                               background-color: #eaeaea;
+                                               li {
+                                                   padding: 5px 8px 5px 7px;
+                                                   display: inline-block;
+                                                   &:last-child {
+                                                       padding: 7px 9px 7px 6px;
+                                                       background-color: #609cff;
+
+                                                       margin-right: -5px;
+                                                       a {
+                                                           color: #fff;
+                                                           text-decoration: underline;
+                                                       }
+                                                   }
+                                               }
+                                               img {
+                                                   margin-right: 5px;
+                                               }
+                                               a {
+
+                                                   color: #676370;
+                                               }
+                                           } //popup  window with news
+                                           .popup-news {
+                                               z-index: 1;
+                                               .coment-block {
+                                                   padding: 9px 7px;
+                                                   background-image: url("img/news-bg.jpg");
+                                                   background-size: cover;
+                                                   border-radius: 5px;
+                                                   .coment-head {
+                                                       background-color: #676370;
+                                                       color: #fff;
+                                                       text-decoration: underline;
+                                                       font-size: 12.72px;
+                                                       padding: 10px 10px 7px 9px;
+                                                   }
+                                                   .popup-polici {
+                                                       margin-top: 10px;
+                                                       font-size: 12px;
+                                                       color: #676370;
+                                                   }
+                                                   background-size: cover;
+                                               }
+                                               .coment-header {
+
+                                                   background-color: #609cff;
+                                                   .coment-link {
+                                                       margin-left: 10px;
+                                                       font-size: 14px;
+                                                       margin-right: 102px;
+                                                   }
+                                                   .coment-actions {
+                                                       display: inline-block;
+                                                       li {
+                                                           display: inline-block;
+                                                           padding: 10px 8px 8px 9px;
+                                                           border-right: 1px solid #9fc0f8;
+                                                           &:last-child {
+                                                               border-right: 1px solid transparent;
+                                                           }
+                                                       }
+                                                   }
+                                                   a {
+                                                       font-size: 12px;
+                                                       color: #fff;
+                                                   }
+                                               }
+                                               .coment-body {
+                                                   display: flex;
+                                                   flex-wrap: wrap;
+                                                   padding: 8px 5px 12px 12px;
+                                                   border-left: 1px solid #d5d5d5;
+                                                   border-right: 1px solid #d5d5d5;
+                                                   border-bottom: 1px solid #d5d5d5;
+                                                   background-color: #eaeaea;
+                                                   .adm-image {
+                                                       border: 1px solid #4b4141;
+                                                       background-color: #609cff;
+                                                       height: 100px;
+                                                       max-width: 100px;
+                                                   }
+                                                   .adm-info {
+                                                       border: 1px solid #4b4141;
+                                                       background-color: #676370;
+                                                       max-width: 100px;
+                                                       padding: 4px 4px;
+                                                       .adm {
+                                                           margin-top: 5px;
+                                                           font-family: arial;
+                                                           font-size: 11px;
+                                                       }
+                                                       .name {
+                                                           color: #ff0000;
+                                                       }
+                                                       .news,
+                                                       .comments {
+                                                           color: #fff;
+                                                       }
+                                                   }
+                                                   .coment-desc {
+                                                       margin-left: 8px;
+                                                       font-size: 12px;
+                                                       color: #676370;
+                                                       max-width: 368px;
+                                                   }
+                                               }
+                                           }
+                                       } //end popup 
+                                       //top 10
+                                       .bl-block {
+                                           background-color: #609cff;
+                                           text-align: center;
+                                           color: #fff;
+                                           padding: 10px 9px 9px 10px;
+                                           text-decoration: underline;
+                                           font-size: 12px;
+                                           margin-bottom: 10px;
+                                       }
+
+                                       .txt-center {
+                                           text-align: center;
+                                           margin-bottom: 10px;
+                                           a {
+                                               font-size: 12px;
+                                               color: #676370;
+                                               text-decoration: underline;
+                                           }
+                                       }
+
+                                       .top-10 {
+                                           margin-left: 9px;
+                                           max-width: 243px;
+                                           background-color: #FFF;
+                                           padding: 8px 7px 9px 8px;
+                                           border-radius: 5px;
+                                           margin-bottom: 8px;
+                                           .top-news {
+                                               display: flex;
+                                               margin-bottom: 9px;
+                                               img {
+                                                   margin-right: 5px;
+                                               }
+                                               .news-link {
+                                                   font-size: 11.76px;
+                                                   text-decoration: underline;
+                                                   color: #609cff;
+                                               }
+                                           }
+                                       } //end tp 10
+                                       //video block
+                                       .popular-videos {
+                                           margin-left: 9px;
+                                           max-width: 243px;
+                                           background-color: #FFF;
+                                           padding: 8px 7px 9px 8px;
+                                           border-radius: 5px;
+                                           margin-bottom: 8px;
+                                       } //end video block
+                                       //tag cloud links
+                                       .tag-cloud {
+                                           margin-left: 9px;
+                                           background-image: url("img/news-bg.jpg");
+                                           background-size: cover;
+                                           max-width: 243px;
+                                           padding: 8px 8px;
+                                           margin-bottom: 8px;
+                                           .cloud-link {
+                                               font-size: 15.98px;
+                                               color: #609cff;
+                                               text-decoration: underline;
+                                               line-height: 19.97px;
+                                               word-spacing: 9px;
+                                           }
+                                       } //end tag cloud
+                                       //archive block
+                                       .news-archive {
+                                           margin-left: 9px;
+                                           background-image: url("img/news-bg.jpg");
+                                           background-size: cover;
+                                           max-width: 243px;
+                                           padding: 8px 8px;
+                                           margin-bottom: 8px;
+                                           li {
+                                               a {
+                                                   font-size: 13px;
+                                                   color: #609cff;
+                                                   line-height: 18px;
+                                               }
+                                           }
+                                       } //end archive
+                                       .popular-video-archive {
+                                           margin-left: 9px;
+                                           background-image: url("img/news-bg.jpg");
+                                           background-size: cover;
+                                           max-width: 243px;
+                                           padding: 8px 8px 92px 8px;
+                                           margin-bottom: 8px;
+
+
+                                           .empty-block {
+                                               font-size: 12px;
+                                               color: #77747f;
+                                           }
+                                       } //third block
+                                       //common
+                                       .news-head {
+                                           background-color: #676370;
+                                           color: #fff;
+                                           text-decoration: underline;
+                                           font-size: 12px;
+                                           text-align: center;
+                                           padding: 10px 20px 9px 20px;
+                                           margin-bottom: 9px;
+                                       }
+
+                                       .third-block {
+                                           max-width: 230px;
+                                           margin-left: 9px;
+                                           .weather {
+                                               margin-bottom: 8px;
+                                           }
+                                           .w-head {
+                                               font-size: 11.76px;
+                                               color: #676370;
+                                               text-decoration: underline;
+                                               margin-bottom: 9px;
+                                           }
+                                           .bl-wrap-wh {
+                                               background-color: #FFF;
+                                               padding: 8px 6px 7px 8px
+                                           }
+
+                                           .weth-data-wrap,
+                                           .time-block {
+                                               display: flex;
+                                               img {
+                                                   margin-right: 9px;
+                                                   height: 35px;
+                                               }
+                                               .weth-data {
+                                                   width: 65px;
+                                                   padding-right: 23px;
+                                                   margin-bottom: 11px;
+                                               }
+                                               .time,
+                                               .temp {
+                                                   font-size: 13px;
+                                                   color: #609cff;
+                                                   word-spacing: 5px;
+                                               }
+                                           }
+                                           .another-city {
+                                               text-align: center;
+                                               margin-bottom: 10px;
+                                               a {
+                                                   text-align: center;
+                                                   color: #609cff;
+                                                   font-size: 11px;
+                                                   text-decoration: underline;
+                                               }
+                                           }
+                                           .cur-wrap {
+                                               padding: 6px 9px;
+                                               background-color: #dfdfdf;
+                                               .cur-item {
+                                                   display: inline-block;
+                                                   font-size: 12px;
+                                                   line-height: 18px;
+                                                   color: #609cff;
+                                                   padding-right: 30px;
+                                               }
+                                           }
+                                       } // calendar
+                                       .calendar-wrap {
+                                           background-color: #ffffff;
+                                           border-radius: 5px;
+                                           margin-bottom: 8px;
+                                       }
+
+                                       #calendar {
+                                           max-width: 218px;
+
+                                           background-image: url("img/cal-bg.jpg");
+                                           background-repeat: no-repeat;
+                                           #calendar-box {
+                                               max-width: 200px;
+                                               margin: 0 auto;
+                                               td,
+                                               th {
+                                                   padding: 6px 6px;
+                                                   color: #676370;
+                                               }
+                                           }
+                                       }
+
+                                       #c-title,
+                                       .btn-sm {
+                                           color: #609cff;
+                                           font-size: 13px;
+                                           background: none;
+                                           border: none;
+                                           text-align: center;
+                                       } //woiting
+                                       .woiting {
+                                           background-color: #ffffff;
+                                           background-image: url("img/woit-bg.jpg");
+                                           background-repeat: no-repeat;
+                                       }
+
+                                       .woit-text {
+                                           font-size: 12px;
+                                           margin-bottom: 9px;
+                                           color: #676370;
+                                       }
+
+                                       .snd-btn {
+                                           background-color: #77747f;
+                                           color: #fff;
+                                           width: 107px;
+                                           padding: 7px 15px;
+                                           text-decoration: underline;
+                                           border-style: none;
+                                           margin-top: 6px;
+                                       }
+
+                                       .woit-form {
+                                           padding: 10px 10px;
+                                           background-color: rgba(113, 167, 255, 0.7);
+                                           div {
+                                               margin-bottom: 10px;
+                                           }
+                                           input[type="radio"] {
+                                               height: 10px;
+                                               width: 10px;
+                                               border: 2px solid #fff;
+                                               padding: 2px;
+                                               background-color: #FFF;
+                                           }
+                                           label {
+                                               color: #fff;
+                                               font-size: 12px;
+                                               line-height: 20px;
+                                           }
+                                       }
+
+                                       .empty-block {
+                                           margin-bottom: 10px;
+                                           padding: 8px 12px;
+                                           border-radius: 5px;
+                                           background-image: url("img/news-bg.jpg");
+                                           padding-bottom: 100px;
+                                       }
+
+                                       .empty-text {
+                                           font-size: 12px;
+                                           color: #77747f;
+                                       }
+
+                                       .adds {
+                                           padding: 8px 12px;
+                                           border-radius: 5px;
+                                           background-image: url("img/news-bg.jpg");
+                                           background-size: cover;
+                                           margin-bottom: 10px;
+                                       } //slider
+                                       .slider {
+                                           .slide,
+                                           .btn-prew,
+                                           .btn-next {
+                                               display: inline-block;
+                                           }
+                                           .slide img {
+                                               height: 69px;
+                                               width: 100px;
+                                               border: 1px solid #736f7c;
+                                           }
+                                           .chevron {
+                                               margin-top: 18px;
+                                           }
+                                       }

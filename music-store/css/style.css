@@ -1,0 +1,394 @@
+/*common*/
+body{
+	background-color: #000;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.cm-text {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*header*/
+.header {
+    background-image: url(../img/header.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.responsive-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    padding: 5px 5px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    display: none;
+}
+
+
+.row {
+    margin: 5px 0;
+    max-width: 100%;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.head-menu {
+    padding-top: 80px;
+    padding-bottom: 166px;
+    
+    
+}
+
+.slider-wraper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.slider {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.head-menu-wrap .menu-item {
+    display: inline-block;
+    padding: 0 32px;
+    transition: 0.4s;
+}
+
+.head-menu-wrap .menu-item a {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.4s;
+    padding-bottom: 12px;
+    border-bottom: 2px solid transparent;
+}
+
+.head-menu-wrap .menu-item a:hover {
+    color: #f23005;
+    border-bottom: 2px solid #f23005;
+}
+
+.welcome {
+    font-size: 36px;
+    font-weight: 200;
+    line-height: 79px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.m-text {
+    color: #f23005;
+}
+
+.head {
+    font-size: 78px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2.69px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.head-desc {
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 694px;
+    margin-bottom: 40px;
+    text-align: right;
+    padding: 0 10px
+}
+
+.btn-wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 380px;
+}
+
+.btn {
+    text-align: center;
+    padding: 17px 0;
+    width: 160px;
+    margin-left: 25px;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    background-color: #f24005;
+}
+
+.bt {
+    border: 1px solid #fff;
+}
+
+.bg {
+    background-color: #f23005;
+}
+
+.btn-link {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/*about*/
+.about {
+    display: flex;
+
+    justify-content: center;
+    padding-bottom: 45px;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 45px;
+}
+
+.about-block {
+    width: 50%;
+}
+
+.head-block {
+    padding: 13px 9px 73px 9px;
+    background-color: #f23005;
+    max-width: 120px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-head {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    margin-bottom: 8px;
+}
+
+.about-desc {
+    font-size: 8px;
+    font-weight: 400;
+    letter-spacing: 1.16px;
+}
+
+.about-desc-text {
+    font-size: 14px;
+    font-weight: 200;
+    max-width: 636px;
+    margin-bottom: 100px;
+    line-height: 20px;
+    text-align: right;
+    padding: 0 10px;
+}
+
+/*statistics*/
+.statistics {
+    background-color: #f23005;
+}
+.statistics-wraper {
+    display: flex;
+}
+
+.statistic-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    list-style: none;
+    padding: 50px 62px;
+    color: #fff;
+    font-family: 'Roboto';
+    font-size: 64px;
+    font-weight: 400;
+
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.statistic-desc {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.statistic-item:hover {
+    background-color: #c42400;
+}
+
+/*prefooter*/
+.prefooter {
+    padding: 245px 10px 235px 10px;
+    background-image: url('../img/Яркость_Контрастность-2.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: left;
+}
+
+.prefooter-desc-wraper{
+	    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.pre-head {
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pre-desc {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 21px;
+    max-width: 732px;
+    margin:0 10px;
+    text-align: right;
+    letter-spacing: 0.88px;
+}
+/*footer*/
+footer{
+	padding: 30px 10px;
+}
+footer .footer-menu ul li{
+	list-style: none;
+	padding: 10px 20px;
+	display: inline-block;
+}
+footer .footer-menu ul li a{
+	text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+.copyright {
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-family: tahoma;
+}
+/*media queries*/
+@media screen and (max-width: 1200px) {
+    .head {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .slider {
+        width: 100%;
+        align-items: center;
+    }
+
+    .head-desc {
+        max-width: 100%;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .about {
+        flex-wrap: wrap;
+    }
+
+    .about-block {
+        width: 100%;
+    }
+
+    .text-block {
+        padding-right: 0;
+    }
+
+    .head-block {
+        width: 100%;
+    }
+
+    .about-desc-text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .statistics-wraper {
+        flex-direction: column;
+    }
+	.prefooter-desc-wraper{
+		width: 100%;
+		align-items: center;
+	}
+      .pre-head,
+    .pre-desc {
+        text-align: center;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    .header {
+        background-image: url('../img/header-sm.jpg');
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+
+    .responsive-btn {
+        display: block;
+    }
+	.head-menu{
+		position: relative;
+		padding-top: 70px;
+		padding-bottom: 30px;
+	}
+
+    .head-menu-wrap {
+    	position: absolute;
+    	top: 100px;
+    	right: 0;
+    	width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);      
+                
+    }
+    .head-menu-wrap .menu-item{
+    	  padding: 10px 0;
+        text-align: center;
+        display: block;
+    }
+    footer .footer-menu ul li{
+    	display: block;
+    	text-align: center;
+    }
+}
+
+
+
+@media screen and (max-width: 425px) {
+    .welcome {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .head {
+        font-size: 25px;
+        text-align: center;
+    }}
