@@ -501,13 +501,16 @@ max-width: 170px;				justify-content: space-between;
 		}
 	}
 	.soc-btn{
-		width: 70px;
+		width: 80px;
 		display: inline-flex;
 		align-items: center;
 		margin-top: 56px;
 		border-radius: 3px;
 		padding: 5px 5px;
-		a{color:#fff;}
+		a{
+			font-family: "lato";
+			font-size: 16px;
+			color:#fff;}
 		i{
 			margin-right: 4px;
 		}
@@ -569,6 +572,7 @@ background-color: #1b95e0;
 		line-height: 21px;
 		color: #fff;
 		margin-bottom: 30px;
+		padding: 0 10px;
 		a{
 			color: #ff6633;
 		}
