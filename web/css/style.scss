@@ -700,8 +700,8 @@ header{
                     color: #fff;
                 }
                 #snd-btn{
-
                     padding: 17px 25px;
+                    margin-top: 20px;
                     font-family: 'parangon', 'tahoma';
                     font-size: 14px;
                     text-transform: uppercase;
@@ -709,6 +709,7 @@ header{
                     background-color: #f6ae48;
                     border-radius: 15px;
                     color: #fff;
+                    cursor: pointer;
                 }
             input,textarea{
                     padding: 14px 20px;
