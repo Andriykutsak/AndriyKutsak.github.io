@@ -152,7 +152,6 @@ header {
             .menu-head {
                 @include heads;
                 color: #b4b4b4;
-
             }
             .menu-wraper {
                 display: flex;
@@ -226,6 +225,7 @@ header {
     .header-head {
     @include gradient-head;
         margin-top: 35px;
+        max-width: 1375px;
 
     }
     .scrol-wraper{
@@ -252,7 +252,7 @@ header {
 /*header end*/
 /* services*/
 .services {
-    padding: 0px 5px 0px 5px;
+    padding: 0px 5px 30px 5px;
     .services-head {
        @include heads;
         color: #b4b4b4;
@@ -265,11 +265,9 @@ header {
         .service-list {
             max-width: 487px;
             padding: 0 0 0 50px;
-
             li {
                 margin-bottom: 80px;
-                border-top: 1px solid transparent;
-
+                border-bottom: 1px solid transparent;
                 a {
                     display: inline-block;
                     font-family: "Ubuntu";
@@ -279,19 +277,19 @@ header {
                     text-transform: uppercase;
                     color: #b4b4b4;
                     transition: 0.4s;
-                    border-bottom: 1px solid transparent;
+                    border-top: 1px solid transparent;
                     &:hover {
                         color: #b69b67;
-                         border-bottom:  1px solid #454545;
+                         border-bottom-color: #454545;
                     }
                 }
             }
             .active {
                 transition: 0.4s;
-                &:hover {
-                    border-top: 1px solid #b69b67;
+                &:hover {                  
                     margin-left: 25px;
                     a {
+                          border-top-color: #b69b67;
                         transform: scale(1.2);
                        
 
@@ -487,6 +485,7 @@ header {
         justify-content: space-between;
 
         .feed-content {
+            display: flex;
             padding-bottom: 30px;
             border-bottom: 1px solid #b69b67;
         }
@@ -509,7 +508,7 @@ header {
             color: #b4b4b4;
             margin-left: 30px;
             max-width: 614px;
-            float: right;
+            
         }
 
         .feed-author {
@@ -605,31 +604,27 @@ header {
         .block-wraper {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content:center;
 
             .block {
+            display: inline-flex;
+            align-items: center;
+            flex-direction: column;              
+                max-width: 33.333%;
+                margin: 20px 50px;
               
-                max-width: 500px;
-                text-align: center;
-
-                .head-line {
-
-                    height: 1px;
-                    width: 96px;
-                    margin-bottom: 15px;
-                    background-color: #b69b67;
-                }
-
-                .contacts-pre-head {
+                 .contacts-pre-head {
                     font-family: "ubuntu";
                     font-size: 30px;
                     font-weight: 300;
                     text-transform: uppercase;
                     text-align: center;
-                    line-height: 15px;
+                   
                     color: #b69b67;
                     margin-bottom: 35px;
-                    position: relative;
+                    max-width: 150px;
+                    border-top: 1px solid #b69b67;
+
                 }
                 .contacts-desc {
                     font-family: "ubuntu";
@@ -637,7 +632,8 @@ header {
                     font-weight: 300;
                     text-transform: uppercase;
                     color: #b4b4b4;
-                    margin: 0 0 25px 0;
+                   margin-bottom: 25px;
+                    text-align: center;
 
                 }
             }
@@ -668,10 +664,10 @@ header {
         .footer-nav {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
 
             li {
-
+                padding: 20px 30px;
                 a {
                     font-family: "Ubuntu", sans-serif;
                     font-size: 15px;
@@ -717,13 +713,22 @@ header {
         .container{
             flex-direction: column;
             .service-list{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
                 padding: 0 5px;
                 li{
                     display: inline-block;
                     padding: 5px 10px;
                     margin-bottom: 10px;
+                  
+                    .active{
+                        &:hover{
+                            margin-left: 0;
+                        }                    }
                     a{
                         font-size: 13px;
+                       
                     }
                 }
             }
