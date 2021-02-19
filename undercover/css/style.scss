@@ -393,23 +393,18 @@ header {
     .container {
         display: flex;
         flex-wrap: wrap;
-
-        .itme-1 {
+           .item-1 {
             background-image: url('../img/item1bg-screen1.jpg');
         }
-
-        .itme-2 {
+        .item-2 {
             background-image: url('../img/item2bg-screen1.jpg');
         }
-
-        .itme-3 {
+        .item-3 {
             background-image: url('../img/item3bg-screen.jpg');
         }
-
-        .itme-4 {
+        .item-4 {
             background-image: url('../img/item4bg-screen.jpg');
         }
-
         .block {
             position: relative;
             display: flex;
@@ -419,13 +414,12 @@ header {
             margin: 16px 0.5%;
             background-size: auto;
             overflow: hidden;
-
             .text-container {
                 padding: 25px 40px 30px 25px;
                 background-color: #b69b67;
-                max-width: 358px;
+                max-width: 55%;
+                height: 100%;
                 transition: 0.4s;
-
                 .item-head {
                     font-family: "ubuntu";
                     font-size: 30px;
@@ -433,7 +427,6 @@ header {
                     text-transform: uppercase;
                     margin-bottom: 70px;
                 }
-
                 .item-desc {
                     font-family: "ubuntu";
                     font-size: 15px;
@@ -442,7 +435,6 @@ header {
                     line-height: 20px;
                     margin-bottom: 29px;
                 }
-
                 .category {
                     font-family: "ubuntu";
                     font-size: 15px;
@@ -469,7 +461,7 @@ header {
                 opacity: 0;
                 transition: 0.4s;
             }
-            &:hover {
+           &:hover {
                 .text-container {
                     transform: translateX(100%);
                 }
@@ -478,7 +470,7 @@ header {
                     opacity: 1;
                 }
             }
-        }
+        } 
     }
 }
 
@@ -694,6 +686,7 @@ header {
 
 /* footer end*/
 // media queries
+
 @media screen and (max-width:800px) {
     header{
         .head-content-wraper{
@@ -737,4 +730,14 @@ header {
         }
     }
     // end services
+}
+@media screen and (max-width: 750px){
+    .portfolio{
+        .container{
+        flex-direction: column;
+        .block{
+            width: 100%;
+        }
+        }
+    }
 }
