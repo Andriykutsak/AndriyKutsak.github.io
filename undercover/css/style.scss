@@ -726,6 +726,36 @@ header {
                     margin: 7px 0;
                 }
             }
+            .active{
+                .rov{
+                    &:nth-child(1){
+                        top: 12px;
+                    }
+                    &:nth-child(3){
+                        top: 12px;
+                    }
+                }
+            }
         }
     }
+}
+@media screen and (max-width: 550px){
+    // services
+    .services{
+        .container{
+            flex-direction: column;
+            .service-list{
+                padding: 0 5px;
+                li{
+                    display: inline-block;
+                    padding: 5px 10px;
+                    margin-bottom: 10px;
+                    a{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+    // end services
 }
