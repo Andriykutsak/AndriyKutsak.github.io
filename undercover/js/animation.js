@@ -9,9 +9,8 @@ btn.addEventListener("click", function(){
 let	serviceItem=document.querySelector(".service-content");
 console.log(serviceItem.offsetHeight)
 function serviceMenu(){
-	let serviceWindow=document.querySelector("#menu-window");
-	
-	let listItems=document.querySelectorAll(".service-list>li");
+	let serviceWindow=document.querySelector("#menu-window");	
+	let listItems=document.querySelectorAll(".service-list>li>a");
 	let items=document.querySelectorAll(".service-content");
 	let wr=document.querySelector("#wraper")
 	let itemHeight=items[0].offsetHeight;
@@ -19,8 +18,7 @@ function serviceMenu(){
 	items.forEach(function(k){
 		k.style.height=itemHeight+"px"
 	})
-	listItems.forEach(function(el,k){
-	
+	listItems.forEach(function(el,k){	
 		el.addEventListener('click',function(e){
 			e.preventDefault();
 			for(let i=0;i>listItems.length; i++){
@@ -42,7 +40,7 @@ function dropDown(){
 		dropdownItems.classList.toggle("active")
 		if (btn.classList.contains("active")) {
 			dropdownItems.style.display="block";
-			console.log(btn.classList.contains("ani"))
+			
 		}
 		else if(false){
 			dropdownItems.addEventListener("transitionend",function(){

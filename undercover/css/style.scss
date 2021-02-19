@@ -95,7 +95,7 @@ header {
                 width: 80px;
                 padding: 20px 15px;
                 border: 1px solid #b4b4b4;
-                transition: 0.4s;
+                transition: cubic-bezier(1,-0.04, 0, 1.3) 0.4s;
                 z-index: 2;
                 &:hover {
                     border: 1px solid #b69b67;
@@ -111,7 +111,7 @@ header {
                     width: 100%;
                     margin: 2px auto 14px;
                     background-color: #b4b4b4;
-                    transition: 0.5s;
+                    transition: cubic-bezier(1,-0.04, 0, 1.3) 0.4s;
                 }
 
             }
@@ -124,11 +124,9 @@ header {
                         left: 0;
                         transform: rotate(-45deg);
                     }
-
                     &:nth-child(2) {
                         opacity: 0;
                     }
-
                     &:nth-child(3) {
                         position: absolute;
                         top: 36px;
@@ -136,11 +134,7 @@ header {
                         transform: rotate(45deg);
                     }
                 }
-            }
-        
-
-        // menu styles
-
+            }        // menu styles
         .menu-container {
             padding: 50px 10px;
             position: absolute;
@@ -154,32 +148,26 @@ header {
             background-blend-mode: lighten;
             transform: translateX(100%);
             opacity: 0;
-            transition: 0.5s;
-
+            transition: cubic-bezier(1,-0.04, 0, 1.3) 0.4s;
             .menu-head {
                 @include heads;
                 color: #b4b4b4;
 
             }
-
             .menu-wraper {
                 display: flex;
                 justify-content: space-between;
-
                 ul {
                     li {
                         padding: 10px 5px 40px;
                         border-top: 1px solid transparent;
                         transition: 0.4s;
-
                         &:hover {
                             border-top: 1px solid #b4b4b4;
-
                             a {
                                 color: #b69b67;
                             }
                         }
-
                         a {
                             font-family: "ubuntu";
                             font-size: 30px;
@@ -188,14 +176,11 @@ header {
                             text-align: left;
                             color: #b4b4b4;
                         }
-                    }
-                }
-
+                    }               }
                 .form-wraper {
                     position: relative;
                     min-width: 487px;
                     max-width: 487px;
-
                     #srch-field {
                         font-family: "ubuntu";
                         font-size: 30px;
@@ -208,18 +193,15 @@ header {
                         border-left: none;
                         border-bottom: 1px solid #454545;
                         padding: 15px 20px;
-
                         &::placeholder {
                             font-family: "ubuntu";
                             font-size: 30px;
                             text-transform: uppercase;
                         }
-
                         &:focus {
                             border-bottom: 1px solid #b4b4b4;
                         }
                     }
-
                     #snd-btn {
                         position: absolute;
                         top: 25px;
@@ -298,22 +280,20 @@ header {
                     color: #b4b4b4;
                     transition: 0.4s;
                     border-bottom: 1px solid transparent;
-
-
                     &:hover {
                         color: #b69b67;
-
+                         border-bottom:  1px solid #454545;
                     }
                 }
             }
             .active {
                 transition: 0.4s;
                 &:hover {
-                    border-bottom: 1px solid #454545;
-                    padding-left: 25px;
+                    border-top: 1px solid #b69b67;
+                    margin-left: 25px;
                     a {
                         transform: scale(1.2);
-                        border-top: 1px solid #b69b67;
+                       
 
                     }
                 }
@@ -324,7 +304,7 @@ header {
             max-width: 935px;
             mix-blend-mode: lighten;
             .wraper {
-                transition: 0.4s;
+                transition: ease-out 0.6s;
             }
             .service-desc {
                 font-family: "Ubuntu";
@@ -338,7 +318,6 @@ header {
                     color: #b69b67;
                 }
             }
-
             .service-img {
                 mix-blend-mode: lighten;
             }
