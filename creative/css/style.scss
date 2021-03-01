@@ -83,15 +83,19 @@ header {
             width: 75px;
         }
         .second {
-            margin: 0;
-          
-            top: 200px;
+           top: 200px;
             left: 25%;
             box-shadow: -5.7px 4.1px 23px 0 rgba(35, 31, 32, 0.57);
             background-color: #1b1b1b;
             height: 400px;
             width: 400px;
             z-index: 3;
+            .content-wraper{
+            	position: relative;
+            	top: 145px;
+            	left: 125px;
+            	transform: rotate(0deg);
+            }
             .header-head {
                 font-family: "lato";
                 font-size: 33px;
@@ -101,16 +105,32 @@ header {
                 margin-bottom: 15px;
             }
             .header-desc {
+            	position: relative;
+            	left: -27px;
+            	top: -57px;
                 font-family: "lato";
                 font-size: 15px;
                 line-height: 23px;
-                text-align: left;
+                text-align: center;
                 max-width: 265px;
                 color: #ffffff;
                 margin-bottom: 15px;
             }
             .header-btn {
+            	position: relative;
+            	top: -112px;
+            	right: 69px;
                 display: block;
+    font-family: "lato";
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 125px;
+    padding: 13px 5px;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #019edb;
+    color: #ffffff;
             }
         }
         .third {
@@ -118,15 +138,66 @@ header {
             top: 100px;
             height: 765px;
             width: 765px;
+            .bg{
+            	    height: 150%;
+    width: 138%;
+    background-image: url(../img/head-bg.jpg);
+    background-size: cover;
+    background-position: 131% 0;
+            }
         }
         .forth {
-            left: 30%;
+            left: 34%;
+            top: 650px;
             height: 325px;
             width: 325px;
+            background-color: #019edb;
+            z-index: 4;
+            .num{
+            	position: relative;
+            	top: 115px;
+            	left: 191px;
+            	font-family: "lato";
+            	font-size: 82px;
+            	font-weight: bold;
+            	text-transform: uppercase;
+            	color: #fff;
+            }
+            .head{
+            	position: relative;
+            	top: 40px;
+            	right: -43px;
+            	font-family: "lato";
+            	font-size: 24px;
+            	font-weight: bold;
+            	text-transform: uppercase;
+            	color: #ffffff;
+            }
+            .desc{
+            	position: relative;
+            	top: 17px;
+            	left: 0px;
+            	font-family: "lato";
+            	font-size: 15px;
+            	text-align: left;
+            	max-width: 290px;
+            	color: #ffffff;
+            	line-height: 20px;
+            }
         }
-        .fifth {
+        .fifth {        	
+    top: 570px;
+    left: 51%;
             height: 415px;
             width: 415px;
+            z-index: 3;
+          .bg{
+          	height: 150%;
+          	width: 150%;
+          	 background-image: url("../img/head-bg2.jpg");
+            background-size: cover;
+            background-position: 180% 0;
+          }
         }
     }
 }
