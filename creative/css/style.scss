@@ -17,6 +17,25 @@ a {
     background-size: cover;
     background-repeat: repeat-y;
 }
+.sq{
+	margin: 0 auto;
+	position: relative;
+	height: 75px;
+	width: 75px;
+	background-color: #00000091;
+	transform: rotate(45deg);
+	z-index: 0;
+	.num{
+		position: absolute;
+		left: 13px;
+		font-family: "lato";
+		font-size: 65px;
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #019edb;
+		transform: rotate(-45deg);
+	}
+}
 // fonts
 @mixin number {
     font-family: "lato black";
@@ -135,6 +154,7 @@ header {
     border-radius: 15px;
     background-color: #019edb;
     color: #ffffff;
+    max-width: 125px;
             }
         }
         .third {
@@ -248,11 +268,8 @@ header {
         			 	margin-bottom: 20px;
         			 }
         			 .chose-block-desc{
-        			 	  font-family: Lato;
-  font-size: 7px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
+        			 	  font-family: "Lato";
+  font-size: 14px;
   line-height: 1.43;
   letter-spacing: normal;
   text-align: left;
@@ -264,6 +281,152 @@ header {
     }
 }
 // header end
+// portfolio
+.portfolio{
+	padding-top: 490px;
+	background-image: url("../img/portfolio-bg.jpg");
+	background-size: cover;
+	.bg-container{
+		padding: 500px 5px 115px 5px;
+		background-image: url("../img/portfolio.png");
+		background-size: cover;
+	}
+	.container{
+		position: relative;
+		display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	max-width: 820px;
+	margin: 0 auto;
+	.rot-block{
+		position: absolute;
+		overflow: hidden;
+		transform: rotate(45deg);
+
+	}
+	.first{
+		top: -321px;
+    left: 20px;
+		width: 15.170%;
+		background-color: #00000091;
+		.num{
+			position: absolute;
+			top: 5px;
+			left: 25px;
+			font-family: "lato";
+			font-size: 87px;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #019edb;
+			transform: rotate(-45deg);
+		}
+	}
+	.second{
+		    top: -154px;
+    left: 0px;
+		width: 34.75%;
+		.bg{
+		    position: absolute;
+    top: -25%;
+    left: -25%;
+    right: -25%;
+    bottom: -25%;
+    transform-origin: center center;
+    background-position: 50% 50%;
+    background-image: url(../img/portfolio-block.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    transform: rotate(-45deg);
+		}
+	}
+	.third{
+		top: -226px;
+    left: 300px;
+		width: 34.75%;
+		background-color: #fff;
+		.head{
+			position: absolute;
+		top: 85px;
+    left: -7px;
+			font-family: "lato";
+			font-size: 42px;
+			font-weight: bold;
+			text-transform: uppercase;
+			color: #019edb;
+			transform: rotate(-45deg);
+
+		}
+		.desc{
+			position: absolute;
+			top: 118px;
+    left: 43px;
+			font-family: "lato";
+			font-size: 16px;
+			color: #1b1b1b;
+			line-height: 20px;
+			text-align: center;
+			max-width: 260px;
+			transform: rotate(-45deg);
+		}
+		.btn{
+			position: absolute;
+			padding: 10px 5px;
+		bottom: 39px;
+    left: 185px;
+			display: block;
+			transform: rotate(-45deg);
+			background-color: #019edb;
+			font-family: "lato";
+			font-size: 14px;
+			text-transform: uppercase;
+			color: #ffffff;
+			border-radius: 10px;
+
+		}
+
+	}
+	.forth{
+		top: -175px;
+    	right: -115px;		
+		width: 34.75%;
+		z-index: 0;
+		.bg{
+			position: absolute;
+			top: -25%;
+			left: -25%;
+			right: -25%;
+			bottom: -25%;
+			transform-origin: center center;
+			background-position: 50% 50%;
+			background-size: cover;
+			background-position: 50% 50%;
+			transform: rotate(-45deg);
+			background-image: url("../img/portfolio-block-2.jpg");
+			transform: rotate(-45deg);
+		}
+	}
+	.portfolio-head{
+		font-family: "lato";
+		font-size: 17px;
+		font-weight: 600;
+		text-transform: uppercase;
+		text-align: center;
+		color: #fff;
+		margin-bottom: 30px;
+	}
+	.portfolio-desc{
+		font-family: "lato";
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+		color: #ffffff;
+		max-width: 800px;
+		margin: 0 5px;
+	}
+}
+}
+// end portfolio
 // work
 .work {
     padding: 95px 5px 145px;
