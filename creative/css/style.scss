@@ -61,7 +61,9 @@ header {
             max-width: 425px;
         }
         .menu {
-            max-width: 500px;
+            margin-left: 120px;
+            max-width: 600px;
+            padding-top: 20px;
             li {
                 display: inline-block;
                 a {
@@ -80,43 +82,35 @@ header {
     .block-wrper {
     	display: flex;
     	flex-direction: column;
-    	justify-content: flex-end;
-        position: relative;
+        flex-wrap: wrap;     
         max-width: 1122px;
-        height: 120vh;
         margin: 0 auto;
-        .rot-block {
-            position: absolute;
+        .rot-block {          
             transform: rotate(-45deg);
-            overflow: hidden;
-            
+            overflow: hidden;            
             * {
                 transform: rotate(45deg);
-                img {
-                    transform: scale(1.7);
-                }
+                
             }
         }
         .first {
-            margin: 0;
-            top: 95px;
-            left: 36%;
-            background-color: #019edb;
-           
-            width: 6.68%;
+           margin-top: 117px;
+    margin-left: 29.819%;         
+            background-color: #019edb;           
+            width: 75px;
         }
         .second {
-           top: 200px;
-            left: 25%;
+            margin-left: 4.954%;
+    
+    margin-top: 26px;
             box-shadow: -5.7px 4.1px 23px 0 rgba(35, 31, 32, 0.57);
-            background-color: #1b1b1b;
-            max-height: 400px;
+            background-color: #1b1b1b;           
             width: 35.650%;
             z-index: 3;
             .content-wraper{
-            	position: relative;
-            	top: 145px;
-            	left: 125px;
+                top: 125px;
+    left: 49px;
+    position: absolute;            	           	
             	transform: rotate(0deg);
             }
             .header-head {
@@ -128,9 +122,7 @@ header {
                 margin-bottom: 15px;
             }
             .header-desc {
-            	position: relative;
-            	left: -27px;
-            	top: -57px;
+            	position: relative;            	
                 font-family: "lato";
                 font-size: 15px;
                 line-height: 23px;
@@ -140,9 +132,7 @@ header {
                 margin-bottom: 15px;
             }
             .header-btn {
-            	position: relative;
-            	top: -112px;
-            	right: 69px;
+            	position: relative;            	
                 display: block;
     font-family: "lato";
     font-size: 15px;
@@ -158,12 +148,11 @@ header {
             }
         }
         .third {
-            left: 36%;
-            top: 100px;
-           
-            width: 68.181%;
-            .bg{
-                  position: absolute;
+            margin-left: 30.630%;
+    margin-top: -560px;
+            width: 68.981%;
+                   .bg{
+                   position: absolute;                  
     top: -25%;
     left: -25%;
     right: -25%;
@@ -176,9 +165,9 @@ header {
      }            
         }
         .forth {
-            left: 34%;
-            top: 650px;
-            
+                      margin-left: 21.441%;
+    height: 325px;
+    margin-top: -207px;     
             width: 28.966%;
             background-color: #019edb;
             z-index: 4;
@@ -214,13 +203,13 @@ header {
             	line-height: 20px;
             }
         }
-        .fifth {        	
-    top: 570px;
-    left: 50%;           
+        .fifth {  
+       margin-top: -325px;
+       margin-left: 46%;          
             width: 36.987%;
             z-index: 3;
           .bg{
-          position: absolute;
+          position: absolute;       
     top: -25%;
     left: -25%;
     right: -25%;
@@ -736,3 +725,7 @@ footer {
 }
 
 // footer end
+// media queries
+@media screen and (max-width: 220px) {
+	
+}
