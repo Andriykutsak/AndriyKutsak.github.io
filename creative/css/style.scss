@@ -517,9 +517,9 @@ header {
         }
         .fx-container {
             display: flex;
-            flex-wrap: wrap;
             align-items: center;
             justify-content: center;
+            padding: 0 5px;
             .block {
                 display: inline-flex;
                 align-items: center;
@@ -697,12 +697,12 @@ header {
         margin: 0 auto;
         .social-wrap {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             li {
                 position: relative;
                 margin: 0 15px;
                 height: 60px;
-                width: 60px;
+                min-width: 60px;
                 border-radius: 50%;
                 border: 2px solid #ffffff;
                 a {
@@ -731,17 +731,19 @@ header {
         text-transform: uppercase;
         color: #fff;
         text-align: center;
-        margin-bottom: 65px;
+        margin-bottom: 50px;
     }
     .container {
         margin: 0 auto;
         max-width: 1055px;
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
         .block {
             display: flex;
             align-items: center;
             max-width: 300px;
+            margin: 15px 30px;
             img {
                 margin-right: 35px;
             }
@@ -795,6 +797,47 @@ footer {
 }
 
 // footer end
+
+// media queries
+@media screen and (max-width:840px){
+.work{
+    .container{
+        .fx-container{
+            flex-direction: column;
+            align-items: center;
+            .block{
+                    flex-direction: column;
+                    align-items: center;
+                    margin: 70px 5px;
+                    .img-wraper{
+                        margin: 10px 0px;
+                    }                    
+                    .work-block-desc, .work-block-head{
+                        text-align: center;
+                        
+
+                    }
+            }
+        }
+    }
+}
+}
+@media screen and (max-width:500px){
+    .testimonials{
+        .flex-container{
+             display: flex;
+            flex-direction: column;
+            align-items: center;
+            .block{
+
+                text-align: center !important;
+                align-items: center !important;
+                margin: 60px 0;
+            }
+        }
+    }
+}
+// end
 // media queries for square blocks
 @media screen and (max-width: 1440px) {
 	header{
