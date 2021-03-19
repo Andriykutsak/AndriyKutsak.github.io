@@ -11,7 +11,7 @@
 	})
 
 // animate element
-let animItems=document.querySelectorAll(".aanimate__animated");
+let animItems=document.querySelectorAll(".animate__animated");
 if(animItems.length>0){
 	window.addEventListener('scroll',scrollAnimate);
 	function scrollAnimate(){
