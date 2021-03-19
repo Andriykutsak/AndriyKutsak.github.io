@@ -89,7 +89,7 @@ header {
             }
         }
     }
-    .block-wrper {
+    .block-wraper {
     	display: flex;
     	flex-direction: column;
         flex-wrap: wrap;     
@@ -795,7 +795,95 @@ footer {
 }
 
 // footer end
-// media queries
-@media screen and (max-width: 220px) {
-	
+// media queries for square blocks
+@media screen and (max-width: 1440px) {
+	header{
+        .block-wraper{
+             .first{
+                margin-bottom: 50px;
+            }
+            .third{
+                margin-left: 25%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1290px) {
+    header{
+        .block-wraper{
+            .second{
+                width: 29%;
+                .header-head{
+
+    top: -1px;
+    left: 43px;
+    font-size: 28px;
+                }
+                .header-desc{
+                    top: -53px;
+    left: -7px;
+                }
+                .header-btn{
+                   top: -81px;
+    left: 0px;
+                }
+            }
+            .first{
+                margin-bottom: 60px;
+                margin-left: 22%;
+            }
+            .third{
+                margin-left: 20%;
+                width: 60%;
+            }
+        }
+    }
+    .portfolio{
+        .container{
+            .second{
+                width: 27%;
+            }
+            .forth{
+                width: 27%;
+            }
+        }
+    }
+}
+@media screen and (max-width:1155px){
+    header{
+        .block-wraper{
+            .first{
+                    margin-left: 16%;
+            }
+            .second{
+                position: relative;;
+                    top: 664px;
+    left: 30%;
+            }
+            .third{
+
+            }
+            .forth{
+                    margin-left: 13.441%;
+      margin-top: -38px;
+      width: 23%;
+      .head{
+        top: 49px;
+    right: -83px;
+    font-size: 19px;
+      }
+      .desc{
+        top: 7px;
+        left: 8px;
+        font-size: 13px;
+      }
+            }
+            .fifth{
+                    margin-top: -255px;
+    margin-left: 65%;
+    width: 23.987%;
+                
+            }
+        }
+    }
 }

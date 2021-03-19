@@ -1,6 +1,6 @@
 (function(){
 	let sq=document.querySelectorAll(".rot-block");
-	window.addEventListener('load',function(e){
+	window.addEventListener('resize',function(e){
 			function setHeight(){
 		sq.forEach(function (el) {
 			el.style.height=el.clientWidth+"px";
@@ -11,7 +11,7 @@
 	})
 
 // animate element
-let animItems=document.querySelectorAll(".ansimate__animated");
+let animItems=document.querySelectorAll(".aanimate__animated");
 if(animItems.length>0){
 	window.addEventListener('scroll',scrollAnimate);
 	function scrollAnimate(){
