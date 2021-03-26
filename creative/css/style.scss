@@ -5,6 +5,7 @@
         url("../fonts/HarabaraMaisBold-HarabaraMaisBold.svg"),
         url("../fonts/HarabaraMaisBold-HarabaraMaisBold.ttf"),
         url("../fonts/HarabaraMaisBold-HarabaraMaisBold.woff");
+         font-display: fallback;
 }
 // main
 img {
@@ -396,7 +397,7 @@ overflow: hidden;
     bottom: -25%;
     transform-origin: center center;
     background-position: 50% 50%;
-    background-image: url(../img/portfolio-block.jpg);
+    background-image: url("../img/portfolio-block.jpg");
     background-size: cover;
     background-position: 50% 50%;
     transform: rotate(-45deg);
