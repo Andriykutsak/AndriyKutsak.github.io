@@ -9,16 +9,12 @@ let minSizes={
 	GradientHead:16,
 	blockHead:30,
 }
-
 function resize(a,b){
 	let css=getComputedStyle(a)
 	let size=(b+(parseInt(css.fontSize)-b)*(window.innerWidth/1520));
 	if (size<parseInt(css.fontSize)) {
 		 a.style.fontSize=size+"px";
 	}
-	
-	 console.log(parseInt(window.innerWidth))
-	 console.log((b+(parseInt(css.fontSize)-b)*(window.innerWidth/1520)))
 }
 
 	resize(head,minSizes.head)
