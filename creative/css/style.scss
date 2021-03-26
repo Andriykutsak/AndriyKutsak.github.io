@@ -6,7 +6,6 @@
         url("../fonts/HarabaraMaisBold-HarabaraMaisBold.ttf"),
         url("../fonts/HarabaraMaisBold-HarabaraMaisBold.woff");
 }
-
 // main
 img {
     height: auto;
@@ -38,16 +37,6 @@ a {
 		color: #019edb;
 		transform: rotate(-45deg);
 	}
-}
-// fonts
-@mixin number {
-    font-family: "lato black";
-    font-size: 65px;
-    text-align: center;
-    text-transform: uppercase;
-}
-@mixin descrption {
-    font-family: "lato"
 }
 // header
 header {  
@@ -88,6 +77,7 @@ overflow: hidden;
             margin-left: 120px;
             max-width: 600px;
             padding-top: 20px;
+            z-index: 1;
             li {
                 display: inline-block;
                 a {
@@ -346,7 +336,7 @@ overflow: hidden;
 .portfolio{	
     position: relative;
     overflow: hidden;
-    width: 100vw;
+    width: 99vw;
     background-image: url("../img/headbg.jpg");
     background-size: cover;
 		.bg-container{
@@ -702,7 +692,6 @@ overflow: hidden;
 
     }
 }
-
 // testimonials end
 // social
 .social {
@@ -731,9 +720,7 @@ overflow: hidden;
         }
     }
 }
-
 // end social
-
 // touch
 .footer-bg{
 background-image: url("../img/footer-bg.jpg");
@@ -741,9 +728,7 @@ background-size: cover;
 }
 .touch {
     padding: 154px 5px 75px 5px;
-    // background-image: url("../img/common-bg.jpg");
-    // background-size: cover;
-    .touch-head {
+       .touch-head {
         font-family: "lato";
         font-size: 19.3px;
         text-transform: uppercase;
@@ -788,12 +773,9 @@ background-size: cover;
         }
     }
 }
-
 // touch end
-
 // footer
-footer {
-    
+footer {    
     .footer-desc {
         margin: 36.5px 27px 0 61.5px;
         font-family: "TimesNewRomanPSMT";
@@ -803,7 +785,6 @@ footer {
         text-align: center;
         color: #ffffff
     }
-
     .up-link {
         margin-top: 35px;
         display: flex;
@@ -816,193 +797,3 @@ footer {
 }
 
 // footer end
-
-// media queries
-@media screen and (max-width:840px){
-.work{
-    .container{
-        .fx-container{
-            flex-direction: column;
-            align-items: center;
-            .block{
-                    flex-direction: column;
-                    align-items: center;
-                    margin: 70px 5px;
-                    .img-wraper{
-                        margin: 10px 0px;
-                    }                    
-                    .work-block-desc, .work-block-head{
-                        text-align: center;
-                        
-
-                    }
-            }
-        }
-    }
-}
-}
-@media screen and (max-width:500px){
-    .testimonials{
-        .flex-container{
-             display: flex;
-            flex-direction: column;
-            align-items: center;
-            .block{
-
-                text-align: center !important;
-                align-items: center !important;
-                margin: 60px 0;
-            }
-        }
-    }
-}
-// end
-// media queries for square blocks
-@media screen and (max-width: 1440px) {
-	header{
-        .block-wraper{
-             .first{
-                margin-bottom: 50px;
-            }
-            .third{
-                margin-left: 25%;
-            }
-        }
-    }
-}
-@media screen and (max-width: 1290px) {
-    header{
-        .block-wraper{
-            .second{
-                width: 29%;
-                .header-head{
-
-    top: -1px;
-    left: 43px;
-    font-size: 28px;
-                }
-                .header-desc{
-                    top: -53px;
-    left: -7px;
-                }
-                .header-btn{
-                   top: -81px;
-    left: 0px;
-                }
-            }
-            .first{
-                margin-bottom: 60px;
-                margin-left: 22%;
-            }
-            .third{
-                margin-left: 20%;
-                width: 60%;
-            }
-        }
-    }
-    .portfolio{
-        .container{
-            .second{
-                width: 27%;
-            }
-            .forth{
-                width: 27%;
-            }
-        }
-    }
-}
-@media screen and (max-width:1155px){
-    header{
-        .block-wraper{
-            .first{
-                    margin-left: 16%;
-            }
-            .second{
-                position: relative;;
-                 top: 664px;
-    left: 30%;
-            }
-            .third{
-
-            }
-            .forth{
-                    margin-left: 13.441%;
-      margin-top: -38px;
-      width: 23%;
-      .head{
-        top: 49px;
-    right: -83px;
-    font-size: 19px;
-      }
-      .desc{
-        top: 7px;
-        left: 8px;
-        font-size: 13px;
-      }
-            }
-            .fifth{
-                    margin-top: -255px;
-    margin-left: 65%;
-    width: 23.987%;
-                
-            }
-        }
-        .fx-container{
-            margin-top: 190px;
-        }
-    }
-}
-@media screen and (max-width:400px){
-    header{
-        .block-wraper{
-            .second{
-                    top: 57px;
-    left: 31%;
-            .header-head{
-                top: -87px;
-    left: -1px;
-    font-size: 10px;
-    
-            }
-            .header-desc{
-              top: -120px;
-    left: -25px;
-    font-size: 6px;
-    line-height: 5px;
-            }
-            .header-btn{
-                    top: -144px;
-    left: -56px;   
-    font-size: 9px;
-    padding: 8px 17px;    
-    max-width: 91px;
-            }
-            }
-            .third{
-                margin-top: -400px;
-            }
-            .forth{
-                .num{
-                        top: 34px;
-    left: 68px;
-font-size: 18px;
-                }
-                .head{
-                        top: 15px;
-    right: -37px;
-    font-size: 10px;
-                }
-                .desc{
-                    top: 7px;
-    left: 8px;
-    font-size: 6px;
-    line-height: 4px;
-                }
-            }
-            
-            .fifth{
-
-            }
-        }
-    }
-}
