@@ -22,15 +22,16 @@ img {
 // mixins
 @mixin heads{
     font-family: "Playfair Disaplay";
-    font-size: 60px;
+    font-size: calc(20px + (60 - 20) * (100vw / 1920));
     text-transform: uppercase;
     text-align: center;
     padding: 0px 10px;
+    
    
 }
 @mixin gradient-head{
  font-family: "Ubuntu", sans-serif;
-        font-size: 60px;
+        font-size: calc(20px + (60 - 20) * (100vw / 1920));
         text-align: center;
         color: transparent;
         text-transform: uppercase;
@@ -38,12 +39,7 @@ img {
         background-clip: text;
         background-image: linear-gradient(90deg, #383838, #d2b782, #373737);
         padding: 0px 10px;
-      
-}
-@mixin desc-text{
-    font-family: "ubuntu", arial;
-    align-text:left;
-
+               
 }
 //end mixins
 /*header*/
@@ -58,14 +54,13 @@ header {
                 @include heads;
                 color: #b69b67;
                 border-top: 1px solid #b69b67;
-                margin-left: -121px;
-            }
+               }
             text-align: center;
         }
 
         .logo-desc {
             font-family: "ubuntu", sans-serif;
-            font-size: 30px;
+            font-size: calc(10px + 20 * (100vw / 1920));
             font-weight: 300;
             color: #b4b4b4;
             text-transform: uppercase;
@@ -78,6 +73,7 @@ header {
     .head-content-wraper {
         display: flex;
         flex-direction: column;
+        align-items: center;
         position: relative;
         width: 100%;
         overflow: hidden;
@@ -404,11 +400,10 @@ header {
             background-image: url('../img/item4bg-screen.jpg');
         }
         .block {
-            position: relative;
+        position: relative;           
             display: flex;
-            align-items: flex-end;
-            flex-direction: column;
-            width: 49%;
+            justify-content: flex-end;
+            width: 49%;            
             margin: 16px 0.5%;
             background-size: auto;
             overflow: hidden;
@@ -441,13 +436,12 @@ header {
                 }
 
             }
-
             .full-btn {
-                margin: 0;
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+                margin: 0;
                 max-width: 310px;
                 padding: 20px 25px;
                 background-color: #b69b67;
@@ -458,6 +452,7 @@ header {
                 color: #303030;
                 opacity: 0;
                 transition: 0.4s;
+                cursor: pointer;
             }
            &:hover {
                 .text-container {
@@ -499,7 +494,7 @@ header {
         }
         .feed-desc {
             font-family: Ubuntu;
-            font-size: 30px;
+            font-size: calc(14px + 16 * (100vw /1920));
             font-weight: 300;
             text-align: left;
             color: #b4b4b4;
@@ -508,7 +503,7 @@ header {
             }
         .feed-author {
             font-family: Ubuntu;
-            font-size: 30px;
+            font-size: calc(14px + 16 * (100vw /1920));
             font-weight: 300;
             text-align: right;
             text-transform: uppercase;
@@ -564,7 +559,7 @@ header {
                 border: none;
 
             }
-            .feed-img {
+            .feed-form-img {
                 position: absolute;
                 bottom: -137px;
                 right: -229px;
@@ -579,29 +574,28 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-  
-    .container {  .contact-head {
+   .contact-head {
         @include heads;
         color: #b4b4b4;        
         margin-bottom: 100px;        
     }
-        .block-wraper {
+        .container{
             display: flex;
             flex-wrap: wrap;
-            justify-content:center;
-            .block {
+            justify-content:space-around;
+            max-width: 1500px;
+            .contact-block {
             display: inline-flex;
             align-items: center;
             flex-direction: column;              
-                max-width: 33.333%;
-                margin: 20px 50px;              
-                 .contacts-pre-head {
+                flex-basis: 400px;
+                margin: 20px 10px;              
+                 .contacts-sub-head {
                     font-family: "ubuntu";
                     font-size: 30px;
                     font-weight: 300;
                     text-transform: uppercase;
-                    text-align: center;
-                   
+                    text-align: center;                   
                     color: #b69b67;
                     margin-bottom: 35px;
                     max-width: 150px;
@@ -611,20 +605,17 @@ header {
                 .contacts-desc {
                     font-family: "ubuntu";
                     font-size: 30px;
-                    font-weight: 300;
                     text-transform: uppercase;
                     color: #b4b4b4;
                    margin-bottom: 25px;
                     text-align: center;
 
                 }
-            }
+            
         }
-
         .contact-img {
             mix-blend-mode: lighten;
         }
-
         .contacts-gradient-head {
           @include gradient-head;
             margin-bottom: 165px;
@@ -646,10 +637,9 @@ header {
         .footer-nav {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-
+            justify-content: space-between;
             li {
-                padding: 20px 30px;
+                padding: 20px 5px;
                 a {
                     font-family: "Ubuntu", sans-serif;
                     font-size: 15px;
@@ -717,11 +707,38 @@ header {
         }
     }
     // end services
+    // contacts
+    .contacts{
+        .container{
+            .contact-block{
+                .contacts-head{
+                    font-size: 18px;
+                }
+                .contacts-desc{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
 }
 @media screen and (max-width: 1145px){
    .feedbacks{
     .container{
     justify-content: center;
+    .feed-form-img{
+        display: none;
+    }
     }
    }
+}
+
+@media screen and (max-width: 900px){
+    .portfolio{
+        .container{
+            .block{
+                min-width: 98%;
+                margin: 10px auto;
+            }
+        }
+    }
 }
