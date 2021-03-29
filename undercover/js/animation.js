@@ -1,6 +1,5 @@
-(function(){
-	
-		//menu button
+window.addEventListener("load",function(){
+			//menu button
 let btn=document.querySelector(".responsive-btn");
 let menu=document.querySelector(".menu-container");
 btn.addEventListener("click", function(){
@@ -54,5 +53,4 @@ function dropDown(){
 	})
 }
 dropDown();
-	
-})();
+})
