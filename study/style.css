@@ -1,0 +1,17 @@
+.container{
+	max-width: 1000px;
+	margin: 0 auto;
+	background-color: #ede3e3;
+	display: flex;
+}
+.block{
+	max-width: 300px;
+	margin-left: 30px;
+}
+.block-head{
+	text-align: center;
+}
+.block-desc{
+	max-width: 250px;
+	text-align: center;
+}

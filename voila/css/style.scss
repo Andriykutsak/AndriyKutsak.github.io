@@ -31,7 +31,6 @@
 		color: #ff6633;
 	}
 }
-
 img{
 	height: auto;
 	max-width: 100%;
@@ -77,11 +76,12 @@ li{
 	background-image: url('../img/header-bg.jpg');
 	background-size: cover;	
 	.flex-container-w{
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 }
 	//logotype
 	.logo{
+		padding-top: 5px;
 		padding-left: 5px;
 	}
 	.logotype{
@@ -110,17 +110,23 @@ li{
 				border-radius: 3px;
 				transition: 0.4s;
 			}}
-	.menu-list-lg{
 	
-		.menu-item{
+	.head-menu{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		padding-top: 3px;
+	.menu-item{
+		display: inline-block;
 			font-family: "pt serif",helvetica;
 			font-size: 14px;
 			line-height: 24px;
 			text-transform: uppercase;
-			color: #ffffff;			
+			color: #ffffff;
+			margin-bottom: 10px;			
 		}
 		.menu-desc{
-			font-family: "PT sans",sans-serif;
+			font-family: sans-serif;
 			font-size: 13px;
 			line-height: 18px;
 			font-style: italic;
@@ -130,21 +136,24 @@ li{
 		
 		
 		li{
-			margin-left: 40px;
+			
+    margin: 0px 14px;
+    max-width: 160px;
 		}
-		
-	}
+		}
+	
 	.header-head{
-		font-family: "pt serif",sans-serif;
-		font-size: 52px;
+		font-family: sans-serif;
+		font-size: 43px;
+		font-weight: 300;
 		line-height: 50px;
 		color: #fff;
 		text-align:center;
-		margin: 165px 0 25px 0;
+		margin-top: 159px;
 	}
 	.head-desc{
 			font-family: "pt serif",sans-serif;
-		font-size: 36px;
+		font-size: 34px;
 		line-height: 50px;
 		color: #fff;
 		text-align:center;
